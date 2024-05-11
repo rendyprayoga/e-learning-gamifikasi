@@ -31,7 +31,7 @@
     <button
       type="submit"
       class="btn btn-primary"
-      style="width: 263px"
+      style="min-width: 100%"
       :disabled="isLoggingIn"
     >
       Login
@@ -79,3 +79,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.custom-btn {
+  min-width: 14.5rem; /* Menetapkan lebar minimum agar tombol menyesuaikan kontennya */
+}
+</style>

@@ -2,7 +2,7 @@
   <div class="table-responsive">
     <table class="table table-borderless table-hover">
       <thead>
-        <tr>
+        <tr style="background-color: #1d1b64; color: black">
           <th>Module</th>
           <th
             v-for="permission of allPermissions"
