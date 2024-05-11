@@ -1,7 +1,7 @@
 <template>
   <div
     class="card"
-    style="width: 18rem; background-color: #e8c872; border-radius: 30px"
+    style="width: 15rem; background-color: #e8c872; border-radius: auto"
   >
     <CourseImg />
     <div class="card-body">
@@ -32,3 +32,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.card {
+  border-radius: 32px;
+  margin-top: 4rem;
+}
+</style>
