@@ -127,7 +127,7 @@ import StarListIcon from 'bootstrap-icons/icons/list-stars.svg';
 import TagIcon from 'bootstrap-icons/icons/tags.svg';
 import QuestionIcon from 'bootstrap-icons/icons/patch-question.svg';
 import GraphUpIcon from 'bootstrap-icons/icons/graph-up.svg';
-import CourseIcon from 'bootstrap-icons/icons/backpack4.svg';
+import CourseIcon from 'bootstrap-icons/icons/backpack.svg';
 
 export default {
   components: {
