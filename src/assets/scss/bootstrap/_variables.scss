@@ -1,0 +1,84 @@
+// Color system
+$primary: #aaaaaa;
+$secondary: #e8c872;
+$warning: #f1f17b;
+$info: #fff3cf;
+$danger: #df5751;
+$success: #23c38e;
+$blue: #2359c3;
+$light: #ffd233;
+
+$red: #a71c1d;
+$bg-primary: #fff3cf;
+$bg-dark: #232282;
+$bg-darker: #1d1b64;
+$color-darkest: #113577;
+$color-darkfull: #1d1b64;
+$color-light: #ffd233;
+$color-primary: #113577;
+$color-darker: #1d1b64;
+$color-succes: #00fe47;
+$color-red: #a71c1d;
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'success': $success,
+  'blue': $blue,
+);
+
+// Options
+$enable-negative-margins: true;
+
+// Body
+$body-color: #152c5b;
+
+// Typography
+$font-family-sans-serif: Rubik, system-ui, -apple-system, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-size-base: 0.875rem;
+$text-muted: #ffff;
+
+// Tables
+$table-cell-padding-y: rem(12);
+$table-cell-padding-x: rem(16);
+$table-hover-bg: #e8c872;
+
+// Components
+$border-width: 2px;
+$border-color: $primary;
+
+// Buttons + Forms
+$input-btn-padding-y: 0.625rem;
+$input-btn-padding-x: 1.125rem;
+$input-btn-focus-width: 0;
+
+// Forms
+$input-border-color: $border-color;
+
+// Utilities
+$utilities: (
+  'min-width': (
+    property: min-width,
+    class: min-w,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+    ),
+  ),
+  object-fit: (
+    property: object-fit,
+    class: of,
+    values: cover,
+  ),
+  'cursor': (
+    property: cursor,
+    class: cursor,
+    values: default move pointer wait,
+  ),
+);

@@ -1,0 +1,8 @@
+.btn-primary,
+.btn-danger {
+  &,
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+}

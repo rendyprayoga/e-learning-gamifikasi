@@ -1,0 +1,21 @@
+.table {
+  --bs-table-bg: #ffffffc9;
+
+  thead {
+    tr {
+      background: $table-hover-bg;
+      color: #7f8eb2;
+    }
+  }
+
+  tbody {
+    .actions {
+      line-height: $line-height-base * $font-size-base;
+
+      .bi {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+}

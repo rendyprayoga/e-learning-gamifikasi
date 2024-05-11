@@ -1,0 +1,21 @@
+stages:
+  - deploy
+
+deploy DEV:
+  stage: deploy
+  tags:
+    - gsc_cms
+  script:
+    - echo "Deploying CMS to server dev"
+    - mkdir -p ~/.ssh
+    - echo "$PRIVATE_KEY" | tr -d '\r' > ~/.ssh/gsc
+    - cat ~/.ssh/gsc
+    - chmod 700 ~/.ssh/gsc
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/gsc
+    - ssh-keyscan -H $SERVER_IP >> ~/.ssh/known_hosts
+    - echo "cd $APP_PATH"
+    - ssh $SSH_SCRIPT "cd $APP_PATH && ./cicd/deploycms.sh && exit"
+    - echo "Deployed"
+  only:
+    - master
