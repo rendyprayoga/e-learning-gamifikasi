@@ -9,7 +9,7 @@
             </h5>
             <div
               class="form-check"
-              v-for="(answer, j) in question.Answers"
+              v-for="(answer, j) in shuffledAnswers(question.Answers, index)"
               :key="answer.id"
             >
               <input
@@ -46,14 +46,19 @@ export default {
   },
   data() {
     return {
-      data: this.question,
+      data: [],
       responses: [],
+      shuffledAnswersCache: [],
     };
+  },
+  mounted() {
+    this.randomizeQuestions();
   },
   watch: {
     question: {
       handler(value) {
         this.data = value;
+        this.randomizeQuestions();
       },
       deep: true,
     },
@@ -70,7 +75,7 @@ export default {
           this.$route.params.idCategory,
           this.responses
         );
-        this.$alert.alert('success', 'Jawban Berhasil disimpan', {
+        this.$alert.alert('success', 'Jawaban Berhasil disimpan', {
           onOK: () => {
             this.$router.push('/courses');
           },
@@ -79,32 +84,51 @@ export default {
         this.$alert.requestError(error);
       }
     },
+    shuffle(array) {
+      let currentIndex = array.length,
+        randomIndex;
+      while (currentIndex != 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [array[currentIndex], array[randomIndex]] = [
+          array[randomIndex],
+          array[currentIndex],
+        ];
+      }
+      return array;
+    },
+    shuffledAnswers(answers, questionIndex) {
+      if (!this.shuffledAnswersCache[questionIndex]) {
+        this.shuffledAnswersCache[questionIndex] = this.shuffle([...answers]);
+      }
+      return this.shuffledAnswersCache[questionIndex];
+    },
+    randomizeQuestions() {
+      this.shuffledAnswersCache = [];
+      const shuffledQuestions = [...this.data];
+      this.data = this.shuffle(shuffledQuestions);
+    },
   },
 };
 </script>
-
 <style scoped>
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-
 .card {
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  margin-top: 2rem;
   background-color: #e8c872;
   border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-body {
   padding: 1rem;
 }
 
 .card-title {
-  text-align: start;
-}
-
-.form-actions {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem;
+  text-align: center;
+  font-size: 20px;
 }
 
 .btn {
