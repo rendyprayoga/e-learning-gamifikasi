@@ -5,7 +5,7 @@
       v-for="(category, i) of data"
       :key="i"
       style="
-        width: 28rem;
+        width: 18rem;
         height: 7.5rem;
         background-color: #e8c872;
         margin-top: 2rem;
@@ -44,8 +44,6 @@
   </div>
 </template>
 <script>
-// import Category from '../../utils/models/Category';
-
 export default {
   data() {
     return { data: [] };
@@ -70,3 +68,29 @@ export default {
   },
 };
 </script>
+<style scoped>
+.card {
+  width: 85%;
+  max-width: 28rem;
+  height: auto;
+  margin-top: 2rem;
+  background-color: #e8c872;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+</style>
