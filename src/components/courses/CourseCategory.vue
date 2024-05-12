@@ -5,7 +5,7 @@
       v-for="(category, i) of data"
       :key="i"
       style="
-        width: 15rem;
+        width: 15.5rem;
         height: auto;
         background-color: #e8c872;
         margin-top: 2rem;
