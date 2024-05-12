@@ -5,8 +5,8 @@
       v-for="(category, i) of data"
       :key="i"
       style="
-        width: 18rem;
-        height: 7.5rem;
+        width: 15rem;
+        height: auto;
         background-color: #e8c872;
         margin-top: 2rem;
         border-radius: 10px;
@@ -19,8 +19,8 @@
           style="
             text-align: center;
             padding-left: 10px;
-            padding-top: 20px;
-            font-size: 20px;
+            padding-top: 8px;
+            font-size: 17px;
           "
         >
           {{ category.name }}
@@ -32,7 +32,7 @@
             style="
               background-color: whitesmoke;
               border-radius: 10px;
-              margin-top: 1rem;
+              font-size: 12px;
             "
             @click="goToQuestion(category.id)"
           >
@@ -73,24 +73,17 @@ export default {
   width: 85%;
   max-width: 28rem;
   height: auto;
-  margin-top: 2rem;
   background-color: #e8c872;
   border-radius: 10px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
 .card-body {
-  padding: 1rem;
+  padding-top: 0.5rem;
 }
 
 .card-title {
   text-align: center;
   font-size: 20px;
-}
-
-.btn {
-  background-color: whitesmoke;
-  border-radius: 10px;
-  margin-top: 1rem;
 }
 </style>
