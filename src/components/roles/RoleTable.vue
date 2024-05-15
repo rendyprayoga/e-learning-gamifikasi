@@ -6,7 +6,7 @@
           <tr style="background-color: #1d1b64; color: black">
             <th scope="col">No</th>
             <th scope="col">Name</th>
-            <th class="text-end" scope="col">Action</th>
+            <th class="text-end" scope="col">Tindakan</th>
           </tr>
         </thead>
         <tbody>
