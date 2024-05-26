@@ -119,7 +119,7 @@ import BootstrapDropdown from '../bootstrap/BootstrapDropdown';
 import BoxArrowRightIcon from 'bootstrap-icons/icons/box-arrow-right.svg';
 import ChevronLeftIcon from 'bootstrap-icons/icons/chevron-left.svg';
 import ChevronRightIcon from 'bootstrap-icons/icons/chevron-right.svg';
-import LightningIcon from 'bootstrap-icons/icons/lightning.svg';
+// import LightningIcon from 'bootstrap-icons/icons/lightning.svg';
 import PeopleFillIcon from 'bootstrap-icons/icons/people-fill.svg';
 import PersonSquareIcon from 'bootstrap-icons/icons/person-square.svg';
 import UiChecksGridIcon from 'bootstrap-icons/icons/ui-checks-grid.svg';
@@ -127,7 +127,8 @@ import StarListIcon from 'bootstrap-icons/icons/list-stars.svg';
 import TagIcon from 'bootstrap-icons/icons/tags.svg';
 import QuestionIcon from 'bootstrap-icons/icons/patch-question.svg';
 import GraphUpIcon from 'bootstrap-icons/icons/graph-up.svg';
-import CourseIcon from 'bootstrap-icons/icons/backpack.svg';
+import CourseIcon from 'bootstrap-icons/icons/backpack4.svg';
+import BadgeIcon from 'bootstrap-icons/icons/award.svg';
 
 export default {
   components: {
@@ -175,6 +176,17 @@ export default {
               icon: CourseIcon,
               label: 'Course',
               access: 'course.read',
+            },
+          ],
+        },
+        {
+          label: 'Badge',
+          items: [
+            {
+              path: '/badges',
+              icon: BadgeIcon,
+              label: 'Badge',
+              access: 'badge.read',
             },
           ],
         },
