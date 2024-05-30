@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <div>
     <BadgeCard />
   </div>
@@ -8,4 +8,4 @@ import BadgeCard from '../../components/badges/BadgeCard';
 export default {
   components: { BadgeCard },
 };
-</script> -->
+</script>
