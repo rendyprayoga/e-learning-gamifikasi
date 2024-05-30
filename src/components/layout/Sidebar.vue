@@ -146,7 +146,7 @@ export default {
     return {
       groups: [
         {
-          label: 'Halaman Kelola',
+          label: 'Halaman Progres',
           items: [
             {
               path: '/reports',
@@ -154,6 +154,17 @@ export default {
               label: 'Leaderboard',
               access: 'reports.read',
             },
+            {
+              path: '/badges',
+              icon: BadgeIcon,
+              label: 'Lencana',
+              access: 'badge.read',
+            },
+          ],
+        },
+        {
+          label: 'Halaman Kelola',
+          items: [
             {
               path: '/categories',
               icon: TagIcon,
@@ -168,8 +179,9 @@ export default {
             },
           ],
         },
+
         {
-          label: 'Course',
+          label: 'Mata Pelajaran',
           items: [
             {
               path: '/courses',
@@ -179,17 +191,17 @@ export default {
             },
           ],
         },
-        {
-          label: 'Badge',
-          items: [
-            {
-              path: '/badges',
-              icon: BadgeIcon,
-              label: 'Badge',
-              access: 'badge.read',
-            },
-          ],
-        },
+        // {
+        //   label: 'Lencana Pencapaian',
+        //   items: [
+        //     {
+        //       path: '/badges',
+        //       icon: BadgeIcon,
+        //       label: 'Lencana',
+        //       access: 'badge.read',
+        //     },
+        //   ],
+        // },
         {
           label: 'Pengaturan',
           items: [
@@ -339,7 +351,7 @@ aside {
     &,
     &:hover,
     &:focus {
-      color: $secondary;
+      color: black;
     }
   }
 
