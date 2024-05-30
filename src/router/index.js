@@ -241,6 +241,14 @@ const routes = [
       middleware: [authMiddleware, permissionMiddleware('course.read')],
     },
   },
+  {
+    path: '/badges',
+    component: () => import('../views/badges/Index'),
+    meta: {
+      layout: DefaultLayout,
+      middleware: [authMiddleware, permissionMiddleware('badge.read')],
+    },
+  },
   //  //  //  ###################################################################
   // {
   //   path: '/pages/',
