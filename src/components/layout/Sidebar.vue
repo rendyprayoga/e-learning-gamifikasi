@@ -288,7 +288,7 @@ aside {
 
 aside {
   width: rem(280);
-  background: $secondary;
+  background: #c79615e6;
   border-right: 2px solid $secondary;
 
   .is-collapsed & {
