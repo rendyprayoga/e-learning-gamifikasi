@@ -27,7 +27,11 @@ export default {
 main {
   background-color: rgba($bg-primary, 0.7);
   margin-left: rem(70);
-
+  position: relative;
+  background-image: url('~@/assets/img/wpauth.jpg'); // Gunakan ~@ untuk mengarahkan ke src
+  background-size: cover; // Agar gambar menutupi seluruh area
+  background-repeat: no-repeat; // Agar gambar tidak berulang
+  background-position: center;
   @include media-breakpoint-up(xl) {
     margin-left: rem(280);
   }

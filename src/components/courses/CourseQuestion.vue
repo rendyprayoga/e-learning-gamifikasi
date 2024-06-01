@@ -117,9 +117,9 @@ export default {
   max-width: 28rem;
   height: auto;
   margin-top: 2rem;
-  background-color: #e8c872;
+  background-color: #e7b325;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7), 0 0 6px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
 .card-body {

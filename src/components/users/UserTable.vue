@@ -11,7 +11,7 @@
             <th class="text-end" scope="col">Tindakan</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody style="background-color: #e7b325">
           <tr v-for="(user, i) of users" :key="user.id">
             <td>{{ getNumber(i) }}</td>
             <td>{{ user.name }}</td>

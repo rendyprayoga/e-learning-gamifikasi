@@ -35,7 +35,7 @@
             <th scope="col">Date</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody style="background-color: #e7b325;">
           <tr v-for="(data, index) in filteredSortedReport" :key="data.id">
             <!-- <td>{{ index + 1 }}</td> -->
              <td>{{ data.rank }}</td>

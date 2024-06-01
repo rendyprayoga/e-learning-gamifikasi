@@ -9,7 +9,7 @@
             <th class="text-end" scope="col">Tindakan</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody style="background-color: #e7b325">
           <tr v-for="(question, i) of questionsData" :key="question.id">
             <td>{{ getNumber(i) }}</td>
             <td>{{ question.questionText }}</td>

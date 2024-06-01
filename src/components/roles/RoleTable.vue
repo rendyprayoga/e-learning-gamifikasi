@@ -9,7 +9,7 @@
             <th class="text-end" scope="col">Tindakan</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody style="background-color: #e7b325">
           <tr v-for="(role, i) of roles" :key="role.id">
             <td>{{ getNumber(i) }}</td>
             <td>{{ role.name }}</td>

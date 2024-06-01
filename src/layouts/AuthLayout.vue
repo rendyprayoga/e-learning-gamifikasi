@@ -29,15 +29,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// $primary: #fff3cf;
-
 #app {
-  // background: linear-gradient(180deg, $color-darker 0%, $primary 90%);
   background: #fff3cf;
+  // background-image: url('~@/assets/img/wpauth.jpg'); // Gunakan ~@ untuk mengarahkan ke src
+  // background-size: cover; // Agar gambar menutupi seluruh area
+  // background-repeat: no-repeat; // Agar gambar tidak berulang
+  // background-position: center;
 }
+
 .bg-white {
   background-color: $secondary !important;
 }
+
 .inner {
   border: none;
   width: 100%;

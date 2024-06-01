@@ -1,7 +1,12 @@
 <template>
   <div
     class="card"
-    style="width: 15rem; background-color: #e8c872; border-radius: auto"
+    style="
+      width: 15rem;
+      background-color: #e7b325;
+      border-radius: auto;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7), 0 0 6px rgba(0, 0, 0, 0.05);
+    "
   >
     <CourseImg />
     <div class="card-body">

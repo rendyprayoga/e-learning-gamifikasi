@@ -7,10 +7,10 @@
       style="
         width: 15.5rem;
         height: auto;
-        background-color: #e8c872;
+        background-color: #e7b325;
         margin-top: 2rem;
         border-radius: 10px;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7), 0 0 6px rgba(0, 0, 0, 0.05);
       "
     >
       <div class="card-body">
@@ -73,7 +73,6 @@ export default {
   width: 85%;
   max-width: 28rem;
   height: auto;
-  background-color: #e8c872;
   border-radius: 10px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
 }
