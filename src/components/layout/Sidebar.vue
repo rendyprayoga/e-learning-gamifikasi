@@ -98,7 +98,7 @@
         <div class="user-text">
           <div>{{ $auth.user.fullname }}</div>
           <a
-            class="d-inline-flex text-danger text-decoration-none align-items-center"
+            class="d-inline-flex text-blue text-decoration align-items-center"
             href="#"
             @click.prevent="$auth.logout()"
           >
