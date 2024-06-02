@@ -83,7 +83,11 @@
     </div>
 
     <div class="mt-4" v-if="!readonly">
-      <button class="btn btn-primary" :disabled="isSubmitting">
+      <button
+        class="btn btn-primary"
+        style="background-color: #e7b325; color: black; border: none"
+        :disabled="isSubmitting"
+      >
         Save
         <span
           v-if="isSubmitting"

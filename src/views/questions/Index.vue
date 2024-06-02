@@ -14,7 +14,8 @@
       <div class="d-flex justify-content-end">
         <router-link
           v-if="$auth.user.can('questions.create') && $route.query.categoryId"
-          class="btn btn-primary text-nowrap mb-1"
+          class="btn btn-primaty text-nowrap mb-1"
+          style="background-color: #e7b325; color: black; border: none"
           :to="`/questions/add/${$route.query.categoryId}`"
         >
           Tambah Pertanyaan

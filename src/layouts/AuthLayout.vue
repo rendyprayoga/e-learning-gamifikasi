@@ -38,7 +38,7 @@ export default {
 }
 
 .bg-white {
-  background-color: $secondary !important;
+  background-color: #e7b325 !important;
 }
 
 .inner {

@@ -14,6 +14,7 @@
         <router-link
           v-if="$auth.user.can('roles.create')"
           class="btn btn-primary text-nowrap mb-1"
+          style="background-color: #e7b325; color: black; border: none"
           to="/roles/add"
         >
           + Tambah

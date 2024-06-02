@@ -208,4 +208,36 @@ export default {
   font-weight: 700;
   font-size: 18px;
 }
+@media (max-width: 768px) {
+  .podium {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .podium-item {
+    width: 70%;
+    margin: 10px 0;
+    height: auto;
+  }
+  .position {
+    font-size: 1.5em;
+  }
+  .score {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .podium-item {
+    width: 90%;
+    margin: 10px 0;
+    padding: 5px;
+  }
+  .position {
+    font-size: 1.2em;
+  }
+  .score {
+    font-size: 0.8em;
+  }
+}
 </style>

@@ -36,7 +36,7 @@
           </tr>
         </thead>
         <tbody style="background-color: #e7b325;">
-          <tr v-for="(data, index) in report" :key="data.id">
+          <tr v-for="(data, index) in filteredSortedReport" :key="data.id">
             <td>{{ index + 1 }}</td>
              <!-- <td>{{ data.rank }}</td> -->
             <td>{{ data.User.name }}</td>

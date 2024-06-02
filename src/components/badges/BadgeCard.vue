@@ -114,7 +114,7 @@ export default {
 .card {
   display: flex;
   width: 20rem;
-  height: 15rem;
+  height: 16rem;
   background-color: rgba(15, 22, 28);
   margin-top: 10rem;
   border-radius: 10px;

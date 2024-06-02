@@ -13,7 +13,7 @@
           </th>
         </tr>
       </thead>
-      <tbody>
+      <tbody style="background-color: #e7b325">
         <tr v-for="module of modules" :key="module.code">
           <td>{{ module.label }}</td>
           <td

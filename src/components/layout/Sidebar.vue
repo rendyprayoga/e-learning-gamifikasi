@@ -152,7 +152,7 @@ export default {
             {
               path: '/reports',
               icon: GraphUpIcon,
-              label: 'Leaderboard',
+              label: 'Reports',
               access: 'reports.read',
             },
             {
