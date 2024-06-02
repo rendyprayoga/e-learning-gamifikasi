@@ -160,6 +160,12 @@ export default {
               label: 'Lencana',
               access: 'badge.read',
             },
+            {
+              path: '/ranks',
+              icon: BadgeIcon,
+              label: 'Rank',
+              access: 'rank.read',
+            },
           ],
         },
         {

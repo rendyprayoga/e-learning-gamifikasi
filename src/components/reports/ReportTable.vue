@@ -28,7 +28,7 @@
       <table class="table table-borderless table-hover text-nowrap">
         <thead>
           <tr style="background-color: #1d1b64; color: black">
-            <th scope="col">Rank</th>
+            <th scope="col">No</th>
             <th scope="col">Name</th>
             <th scope="col">Score</th>
             <th scope="col">Category</th>
@@ -36,9 +36,9 @@
           </tr>
         </thead>
         <tbody style="background-color: #e7b325;">
-          <tr v-for="(data, index) in filteredSortedReport" :key="data.id">
-            <!-- <td>{{ index + 1 }}</td> -->
-             <td>{{ data.rank }}</td>
+          <tr v-for="(data, index) in report" :key="data.id">
+            <td>{{ index + 1 }}</td>
+             <!-- <td>{{ data.rank }}</td> -->
             <td>{{ data.User.name }}</td>
             <td>{{ data.score }}</td>
             <td>{{ data.Category.name }}</td>
