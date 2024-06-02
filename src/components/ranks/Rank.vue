@@ -76,11 +76,6 @@ export default {
       categories: [], // Untuk menyimpan daftar kategori
       meta: null,
       selectedCategory: '', // Untuk menyimpan kategori yang dipilih
-      podiumData: [
-        { name: 'Charles Michel', score: 195 },
-        { name: 'Bar de Wever', score: 160 },
-        { name: 'Jan Jambon', score: 100 },
-      ],
     };
   },
 
