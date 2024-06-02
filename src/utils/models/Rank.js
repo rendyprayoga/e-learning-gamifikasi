@@ -1,6 +1,6 @@
 import BaseModel from './BaseModel';
-import Ranks from '../../api/ranks';
+import ranks from '../../api/ranks';
 
-export default class Ranks extends BaseModel {
+export default class Rank extends BaseModel {
   static api = ranks;
 }

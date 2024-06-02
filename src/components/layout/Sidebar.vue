@@ -129,6 +129,7 @@ import QuestionIcon from 'bootstrap-icons/icons/patch-question.svg';
 import GraphUpIcon from 'bootstrap-icons/icons/graph-up.svg';
 import CourseIcon from 'bootstrap-icons/icons/backpack4.svg';
 import BadgeIcon from 'bootstrap-icons/icons/award.svg';
+import RankIcon from 'bootstrap-icons/icons/bar-chart.svg';
 
 export default {
   components: {
@@ -155,16 +156,16 @@ export default {
               access: 'reports.read',
             },
             {
+              path: '/ranks',
+              icon: RankIcon,
+              label: 'Rank',
+              access: 'rank.read',
+            },
+            {
               path: '/badges',
               icon: BadgeIcon,
               label: 'Lencana',
               access: 'badge.read',
-            },
-            {
-              path: '/ranks',
-              icon: BadgeIcon,
-              label: 'Rank',
-              access: 'rank.read',
             },
           ],
         },

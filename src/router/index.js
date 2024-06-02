@@ -249,6 +249,14 @@ const routes = [
       middleware: [authMiddleware, permissionMiddleware('badge.read')],
     },
   },
+  {
+    path: '/ranks',
+    component: () => import('../views/ranks/Index'),
+    meta: {
+      layout: DefaultLayout,
+      middleware: [authMiddleware, permissionMiddleware('rank.read')],
+    },
+  },
   //  //  //  ###################################################################
   // {
   //   path: '/pages/',
