@@ -17,7 +17,7 @@
         <button
           type="button"
           class="btn btn-secondary"
-          style="background-color: white; border-radius: 20px"
+          style="background-color: white; border-radius: 20px; margin: 0.2rem"
           @click="goToCategory"
         >
           Pilih Course

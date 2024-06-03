@@ -166,15 +166,15 @@ export default {
 }
 .position-1 {
   background: #d9534f;
-  height: 80%;
+  height: 85%;
 }
 .position-2 {
   background: #f0ad4e;
-  height: 50%;
+  height: 65%;
 }
 .position-3 {
   background: #5bc0de;
-  height: 40%;
+  height: 50%;
 }
 .position {
   font-size: 2em;
@@ -205,14 +205,27 @@ export default {
 }
 @media (max-width: 768px) {
   .podium {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 30vh;
+  }
+  .card {
+    max-width: 80%;
     height: auto;
   }
   .podium-item {
-    width: 70%;
-    margin: 10px 0;
+    width: 30%;
+    margin: 10px 5px;
     height: auto;
+  }
+  .position-1 {
+    height: 75%;
+  }
+  .position-2 {
+    height: 55%;
+  }
+  .position-3 {
+    height: 45%;
   }
   .position {
     font-size: 1.5em;
@@ -223,10 +236,26 @@ export default {
 }
 
 @media (max-width: 480px) {
+  .podium {
+    height: 30vh;
+  }
   .podium-item {
-    width: 90%;
-    margin: 10px 0;
+    width: 38%;
+    margin: 10px 5px;
     padding: 5px;
+  }
+  .position-1 {
+    height: 75%;
+  }
+  .position-2 {
+    height: 55%;
+  }
+  .position-3 {
+    height: 45%;
+  }
+  .card {
+    max-width: 90%;
+    height: auto;
   }
   .position {
     font-size: 1.2em;

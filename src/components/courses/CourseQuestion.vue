@@ -28,7 +28,13 @@
         </div>
       </div>
       <div class="form-actions">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          style="background-color: black; border: none; color: whitesmoke"
+        >
+          Submit
+        </button>
       </div>
     </form>
   </div>

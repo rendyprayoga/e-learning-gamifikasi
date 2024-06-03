@@ -33,6 +33,7 @@
               background-color: whitesmoke;
               border-radius: 10px;
               font-size: 12px;
+              margin: 0.2rem;
             "
             @click="goToQuestion(category.id)"
           >
