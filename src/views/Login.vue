@@ -31,7 +31,12 @@
     <button
       type="submit"
       class="btn btn-primary"
-      style="min-width: 100%"
+      style="
+        min-width: 100%;
+        background-color: whitesmoke;
+        color: black;
+        border: none;
+      "
       :disabled="isLoggingIn"
     >
       Login
