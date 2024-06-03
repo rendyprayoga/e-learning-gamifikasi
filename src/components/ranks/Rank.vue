@@ -219,13 +219,13 @@ export default {
     height: auto;
   }
   .position-1 {
-    height: 75%;
+    height: 80%;
   }
   .position-2 {
-    height: 55%;
+    height: 60%;
   }
   .position-3 {
-    height: 45%;
+    height: 50%;
   }
   .position {
     font-size: 1.5em;
@@ -245,13 +245,13 @@ export default {
     padding: 5px;
   }
   .position-1 {
-    height: 75%;
+    height: 90%;
   }
   .position-2 {
-    height: 55%;
+    height: 75%;
   }
   .position-3 {
-    height: 45%;
+    height: 60%;
   }
   .card {
     max-width: 90%;
