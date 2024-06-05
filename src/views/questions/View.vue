@@ -31,12 +31,21 @@
         <div class="col-lg-12">
           <router-link
             class="btn btn-primary"
-            style="margin-right: 10px"
+            style="
+              margin-right: 10px;
+              background-color: #e7b325;
+              color: black;
+              border: none;
+            "
             :to="`/questions?categoryId=${question.categoryId}`"
           >
             Kembali
           </router-link>
-          <button class="btn btn-primary" :disabled="isSubmitting">
+          <button
+            class="btn btn-primary"
+            style="background-color: #e7b325; color: black; border: none"
+            :disabled="isSubmitting"
+          >
             Simpan
             <span
               v-if="isSubmitting"
