@@ -25,7 +25,7 @@
             <th scope="col">Name</th>
             <th scope="col">Score</th>
             <th scope="col">Category</th>
-            <!-- <th scope="col">Date</th> -->
+            <th scope="col">Date</th>
           </tr>
         </thead>
         <tbody style="background-color: #e7b325">
@@ -34,7 +34,7 @@
             <td>{{ data.User.name }}</td>
             <td>{{ data.score }}</td>
             <td>{{ data.Category.name }}</td>
-            <!-- <td>{{ moment(data.createdAt).format('DD-MM-YYYY HH:mm:ss') }}</td> -->
+            <td>{{ moment(data.createdAt).format('DD-MM-YYYY HH:mm:ss') }}</td>
           </tr>
         </tbody>
       </table>
