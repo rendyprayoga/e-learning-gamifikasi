@@ -105,6 +105,7 @@ export default {
       handler(value) {
         if (value) {
           this.$route.query.categoryId = value;
+          this.fetch();
         }
       },
     },
