@@ -103,16 +103,23 @@ export default {
   watch: {
     'input.categoryId': {
       handler(value) {
+        const query = { ...this.$route.query };
         if (value) {
-          this.$route.query.categoryId = value;
-          this.fetch();
+          query.categoryId = value;
+        } else {
+          delete query.categoryId;
         }
-      },
-    },
-    '$route.query': {
-      handler() {
+        this.$router.push({ query });
         this.fetch();
       },
+      immediate: true,
+    },
+    '$route.query': {
+      handler(newQuery) {
+        this.input.categoryId = newQuery.categoryId || '';
+        this.fetch();
+      },
+      immediate: true,
       deep: true,
     },
   },
