@@ -73,9 +73,9 @@ export default {
     return {
       isFetching: false,
       rank: [],
-      categories: [], // Untuk menyimpan daftar kategori
+      // categories: [], // Untuk menyimpan daftar kategori
       meta: null,
-      selectedCategory: '', // Untuk menyimpan kategori yang dipilih
+      // selectedCategory: '', // Untuk menyimpan kategori yang dipilih
     };
   },
 
@@ -93,20 +93,20 @@ export default {
       }
     },
 
-    onCategoryChange() {
-      // Fetch lagi dengan query kategori yang dipilih
-      this.fetch();
-    },
+    // onCategoryChange() {
+    //   // Fetch lagi dengan query kategori yang dipilih
+    //   this.fetch();
+    // },
   },
 
-  watch: {
-    '$route.query': {
-      handler() {
-        this.fetch();
-      },
-      deep: true,
-    },
-  },
+  // watch: {
+  //   '$route.query': {
+  //     handler() {
+  //       this.fetch();
+  //     },
+  //     deep: true,
+  //   },
+  // },
 
   created() {
     this.fetch();
